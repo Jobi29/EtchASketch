@@ -10,7 +10,9 @@
     flex:20px;
 
 }
-.grid{
-    border:transparent black;
-
+.gridBorder{
+    box-shadow:0px 0px 0px 1px rgb(209, 206, 206) inset;
+}
+.gridColor{
+    background-color: red;
 }

@@ -1,4 +1,4 @@
-let gridSize = 8;
+let gridSize = 16;
 let size = 480 / gridSize;
 let color = "red";
 const gridContainer = document.querySelector('#gridContainer');
@@ -13,7 +13,11 @@ for(let i=0; i < gridSize * gridSize;i++){
     gridContainer.appendChild(div);
 }
 document.querySelector("#gridContainer").addEventListener("mouseover", function(event){
-    console.log(event.target.id);
-    let target = getElementById(event.target.id);
-    target.setAttribute('style', 'background: red');    
+        
+        if(event.target.id != "gridContainer"){
+            event.target.setAttribute('class', 'gridColor');
+            console.log(event.target.id);
+        }
+       
+      
   });
